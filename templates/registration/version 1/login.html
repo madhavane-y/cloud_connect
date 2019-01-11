@@ -1,0 +1,57 @@
+<html>
+    <head>
+        {% load static %}
+        <title>Project CC</title>
+        <style type="text/css">
+            *{padding: 0; margin: 0;}
+            html{
+    background-image: linear-gradient(#3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);
+    height: 100%; width: 100%; background-repeat: no-repeat;
+    background-size: auto; font-family: 'Open Sans', sans-serif;color: white;
+                }
+        </style>
+        <link rel="stylesheet" href="{% static 'login.css' %}">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet"> 
+    </head>
+      <body>
+            {% if form.errors %}
+              <p>Your username and password didn't match. Please try again.</p>
+            {% endif %}
+            
+            {% if next %}
+              {% if user.is_authenticated %}
+                <p>Your account doesn't have access to this page. To proceed,
+                please login with an account that has access.</p>
+              {% else %}
+                <p>Please login to see this page.</p>
+              {% endif %}
+            {% endif %}
+            
+            <div class="container">
+               <div class="header">
+                   <br />
+                   <!-- <div class="pic"><img src="{% static 'newmlogo.png' %}" style="height: 90px; width: 310px; "></div> -->
+                 <!-- <div class="pic1"><img src="{% static 'centerlogo.png' %}" style="height:300px; width:380px "> </div>   -->
+               </div>     
+            </div>
+            <div class="loginbox">
+                <div class="glass">
+                    <h3 class="title">Enter AWS credentials</h3><br><br><br>
+                    <form method="POST" action="{% url 'login/login' %">
+                        <div class="inputbox">
+                           <!-- <input type="text" name="accountid" placeholder="Account ID or alias" id="accountid"/> -->
+                           {{form.username}}<br>
+                            <!-- <input type="text" name="uname" placeholder="IAM user name" id="uname"/> -->
+                            {{form.password}}
+                            <!-- <input type="password" name="password" placeholder="Password" id="password"/><br><br><br><br>                                        -->
+                        </div>
+                         <!-- <a href="page2.html"><button type="button" class="login login1">Log In</button></a> -->
+                         <input type="submit" value="Login" class="login login1">
+                         <input type="hidden" value="{{ next }}">
+                    </form>
+                </div>
+            <h7 class="botname">Developed by Team Animus</h7>
+            {{ iam }}
+    </body>
+</html>
+

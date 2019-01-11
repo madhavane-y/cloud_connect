@@ -1,0 +1,106 @@
+html{
+    background-image: linear-gradient(#3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: auto;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    margin: 0%;
+    padding: 0%;
+    }
+.container{
+    position: relative; 
+    margin: 0 auto;
+}
+.header{
+    width: 960px;
+    padding: 10px;
+    top: -10%;
+}
+.pic{
+    position: absolute;
+    left: 9%;
+    right: 80%;
+    top: 30%;
+    }
+.pic1{
+    position: absolute;
+    left: 36%;
+    right: 60%;
+    top: 150;
+}
+.title{
+    font-size: 25px;
+    color: white;
+}
+.loginbox {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(-40%, -40%);
+    width: 450px;
+    height: 550px;
+    box-sizing: border-box;
+    background: transparent;
+  }
+.glass {
+    width: 100%;
+    height: 90%;
+    padding: 40px;
+    box-sizing: border-box;
+    background: rgba(226, 226, 226, 0.1);
+    border-radius: 5px;
+    left:50%;
+    top: 60%;
+}
+.loginbox input {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 40;
+}
+.loginbox input[type="text"],
+.loginbox input[type="password"] {
+    border: none;
+    border-bottom: 2px solid rgba(97,97,97,0.4);
+    outline: none;
+    height: 40px;
+    color: #ffffff;
+    background: transparent;
+    margin-bottom: 30px;
+    font-size: 16px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    background: rgba(226, 226, 226, 0.1);
+}
+border-bottom: 1px solid black;
+.inputbox span {
+    position: absolute;
+    top: 10px;
+    color: #262626;
+}
+.loginbox button{
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    background: rgba(75, 75, 75, 0.37);
+    border-radius: 20px;
+    cursor: pointer;
+    color: wheat;
+}
+.loginbox a {
+    color: #262626;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+.botname{
+    font-size: 13px;
+    color: white;
+    
+}

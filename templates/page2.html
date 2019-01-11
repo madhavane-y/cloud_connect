@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <title>Project CC</title>
+        {% load static staticfiles %}
+        <meta name="generator" content="Team Animus">
+        <meta name="author" content="Yogeshwar Madhavane,Irshad Ahamed">
+        <meta name="date" content="00-00-0000">
+        <meta name="copyright" content="none">
+        <meta name="description" content="a cloud automation application">
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta http-equiv="content-style-type" content="text/css">
+        <style type="text/css">
+            *{padding: 0; margin: 0;}
+        </style>
+        <link rel="stylesheet" href="{% static 'page2.css' %}">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet"> 
+    </head>
+      <body>
+            <div class="container">
+               <div class="header">
+                   <br />
+                   <div class="pic"><img src="{% static 'newmlogo.png' %}"style="height: 90px; width: 310px; "></div>
+                  </div>   
+                 </div>
+                 <section class="mainarea">
+                       
+                        <a name = "Create"></a>
+                        <br><br>
+                        <h2>Create</h2>
+                        <p>--------------------------------------------------</p>
+
+                        <form method="POST" class='os'>
+                            {%csrf_token%}
+                            {{os_form}}
+                            <input type="submit" name="ubuntu" value="ubuntu"> Ubuntu </input>   <br><br><br><br>
+                            <input type="submit" name="redhat" value="redhat"> Redhat </input>   <br><br><br><br>
+                            <input type="submit" name="windows" value="windows"> Windows </input>   <br><br><br><br>
+                        </form>
+                        
+
+                        <br><br><br><br><br><br><br><br><br>
+                    
+                    
+                    
+                    <a name = "Launch"></a>
+                        <br><br>
+                        <h1>Launch</h1>
+                        <p>-------------------------------------------------</p>
+                        
+                        <form method="POST" class="launch">{% csrf_token %}
+                            <ul>
+                                <li>
+                                    {{launch_form}}
+                                </li>
+                            </ul>
+                        </form>
+
+                        <br><br><br><br><br><br><br><br><br><br>
+
+
+
+                        <a name = "Maintenance"></a>
+                        <br><br>
+                        <h2>Maintenance</h2>
+                        <p>----------------------------------------------------</p>
+                        <p>
+                            Backup's Created
+                        </p>
+
+                        <br><br><br><br><br><br><br><br>
+
+
+                    </section>
+            <div class="box">
+                <div class="glass2">
+                     <section>
+                            <nav>
+                                    <ul>
+                                        <li class="dboard">|---DASHBOARD---|</li><br><br><br><br>
+                                        <li><a href="#Create"><button type="button" class="button button1">Create</button></a></li><br><br><br><br>
+                                        <li><a href="#Launch"><button type="button" class="button button1">Launch</button></a></li><br><br><br><br>
+                                        <li><a href="#Maintenance"><button type="button" class="button button1">Maintenance</button></a></li>
+                                    </ul>
+                                </nav>
+                        </section>
+                </div>
+               </body>
+</html>
+
