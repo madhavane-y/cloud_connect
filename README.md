@@ -1,2 +1,2 @@
-This is the cloud Automation Solution for **TCS Inframind 2k19**.
--- Team Animus
+This is the cloud Automation Solution for **AWS** under current attempt.
+Future works are planned for extending the features and support to other cloud services too!
