@@ -15,7 +15,7 @@ decorator==4.1.2
 dill==0.2.8.2
 en-core-web-sm==2.0.0
 enum34==1.1.6
-Flask==0.12.2
+Flask==1.0
 funcsigs==1.0.2
 futures==3.2.0
 gyp==0.1
